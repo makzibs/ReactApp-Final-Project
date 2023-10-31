@@ -2,23 +2,26 @@ import About from "./components/About";
 import Tasks from "./components/Tasks";
 import Setting from "./components/Setting";
 import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
       <nav className="nav-container">
+
+        <h1>My Activity App</h1>
         
         <ul className="nav-items">
+
           <li >
-            <Link to="/about">About</Link>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <Link to="/tasks">Tasks</Link>
+            <NavLink to="/tasks">Tasks</NavLink>
           </li>
           <li>
-            <Link to="/setting">Settings</Link>
+            <NavLink to="/setting">Settings</NavLink>
           </li>
         </ul>
        
