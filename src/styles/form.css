@@ -3,7 +3,10 @@
     justify-content: center;
     height: 2rem;
     width: 50%;
-    margin: auto;
+    font-size: 22px;
+    color: white;
+
+    
   }
   
   .textfield {
@@ -22,6 +25,18 @@
     outline: none !important;
     box-shadow: 0px 3px 5px rgb(218, 218, 218);
   }
+  .minutes_textfield{
+    background-color: #fefefe;
+    border: none;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    box-shadow: 0px 5px 10px rgb(218, 218, 218);
+    box-sizing: border-box;
+    width: 100px;
+  }
   
   .submit-btn {
     height: 100%;
@@ -37,4 +52,6 @@
   .submit-btn:hover {
     box-shadow: 0px 3px 5px #7f89e0;
   }
+
+  
   

@@ -4,22 +4,22 @@ import "../styles/form.css";
 
 export const Form = ({ addTask, addTypes, addMinutes }) => {
   const [text, setText] = useState("");
-  const [radio, setRadio] = useState("none");
+  const [option, setOption] = useState("none");
   const [minutes, setMinutes] = useState("");
   
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addTask(text);
-    addTypes(radio);
+    addTypes(option);
     addMinutes(minutes);
     setText("");
-    setRadio("");
+    setOption("");
     setMinutes("");
   };
 
-  const handleGenreChange = (e) => {
-    setRadio(e.target.value);
+  const handleOptionChange = (e) => {
+    setOption(e.target.value);
   };
 
   const handleMinutesChange = (e) => {
@@ -34,41 +34,24 @@ export const Form = ({ addTask, addTypes, addMinutes }) => {
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
-      <p>Choose Types:</p>
-        <label>
-          <input
-            type="radio"
-            name="Types"
-            value="Entertainment"
-            //checked={Types === 'Entertainment'}
-            onChange={handleGenreChange}
-          />
-          Entertainment
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="Types"
-            value="Studies"
-            //checked={Types === 'Studies'}
-            onChange={handleGenreChange}
-          />
-          Studies
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="Types"
-            value="Household"
-            //checked={Types === 'Household'}
-            onChange={handleGenreChange}
-          />
-          Household
-        </label>
+        <label htmlFor="Option">Task Types:</label>
+        <select
+          //id="Option"
+          className="minutes_textfield"
+          value={Option}
+          onChange={handleOptionChange}
+        >
+          <option value=""></option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Studies">Studies</option>
+          <option value="Household">Household</option>
+        </select>
+            
 
         <label htmlFor="minutes">Minutes Spent:</label>
         <input
           type="text"
+          className="minutes_textfield"
           id="minutes"
           value={minutes}
           onChange={handleMinutesChange}
