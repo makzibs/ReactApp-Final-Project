@@ -1,0 +1,8 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* To center across the page */
+    width: 40%;
+    margin: 1rem auto;
+  }

@@ -1,5 +1,5 @@
 .App{
-    background-color: #81CAD6;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -10,7 +10,7 @@
 
 .nav-container{
     height: 150px;
-    background-color:  #DC3E26;
+    background-color:  #5d5b5b;
     display: flex;
     align-items: center; 
 }

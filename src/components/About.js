@@ -3,7 +3,11 @@ import "../styles/about.css"
 
 function About() {
   return (
-    <div className="about">This is the homepage</div>
+    <div className="about">
+      <h1>Welcome to the homepage</h1>
+      
+
+      </div>
   )
 }
 
