@@ -8,7 +8,7 @@ import { TasksLists } from "./TasksLists";
 
 export default function Tasks ()  {
   const [tasks, setTasks] = useState([]);
-  const [types, setTypes] = useState('none');
+  const [types, setTypes] = useState('');
   const [minutes, setMinutes] = useState('');
 
   const addTask = (newTask) => {
@@ -31,8 +31,8 @@ export default function Tasks ()  {
 
   return (
     <div className="tasks">
-      <Form addTask={addTask} addTypes={addTypes} addMinutes={addMinutes} />
-      <TasksLists tasks = {tasks} removeTask = {removeTask}/>
+      <Form addTask={addTask} addTypes={addTypes} addMinutes={addMinutes} />         
+      <TasksLists tasks = {tasks} types = {types} minutes = {minutes} removeTask = {removeTask}/>
     </div>
   );
 }

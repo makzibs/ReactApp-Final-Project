@@ -5,10 +5,12 @@
     justify-content: space-between;
     margin: 5px 0px;
     padding: 0 2em;
+    height: 60px;
     width: 90%;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0px 5px 10px rgb(199, 199, 199);
+    font-size: 24px;
   }
   
   .list-item:hover {

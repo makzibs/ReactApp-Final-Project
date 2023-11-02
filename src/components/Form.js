@@ -4,7 +4,7 @@ import "../styles/form.css";
 
 export const Form = ({ addTask, addTypes, addMinutes }) => {
   const [text, setText] = useState("");
-  const [option, setOption] = useState("none");
+  const [option, setOption] = useState("Entertainment");
   const [minutes, setMinutes] = useState("");
   
 
@@ -28,23 +28,25 @@ export const Form = ({ addTask, addTypes, addMinutes }) => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+    <label htmlFor="task">Task:</label>
       <input
         type="text"
+        id="task"
         className="textfield"
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
-        <label htmlFor="Option">Task Types:</label>
+        <label htmlFor="Option">Types:</label>
         <select
-          //id="Option"
+          id="Option"
           className="minutes_textfield"
-          value={Option}
+          value={option}
           onChange={handleOptionChange}
         >
           <option value=""></option>
           <option value="Entertainment">Entertainment</option>
           <option value="Studies">Studies</option>
-          <option value="Household">Household</option>
+          <option value="Household">Househld</option>
         </select>
             
 
