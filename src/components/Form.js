@@ -2,24 +2,35 @@ import { useState } from "react";
 
 import "../styles/form.css";
 
-export const Form = ({ addTask, addTypes, addMinutes }) => {
+export const Form = ({ addTask }) => {
+
   const [text, setText] = useState("");
-  const [option, setOption] = useState("Entertainment");
+  const [types, setTypes] = useState("");
   const [minutes, setMinutes] = useState("");
-  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTask(text);
-    addTypes(option);
-    addMinutes(minutes);
+  
+   // Create a task object
+    const newTask = {
+    text: text,
+    type: types,
+    minutes: minutes,
+  };
+
+   addTask(newTask);
+
     setText("");
-    setOption("");
+    setTypes("Entertainment");
     setMinutes("");
   };
 
-  const handleOptionChange = (e) => {
-    setOption(e.target.value);
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+  };
+
+  const handleTypesChange = (e) => {
+    setTypes(e.target.value);
   };
 
   const handleMinutesChange = (e) => {
@@ -33,15 +44,15 @@ export const Form = ({ addTask, addTypes, addMinutes }) => {
         type="text"
         id="task"
         className="textfield"
-        onChange={(e) => setText(e.target.value)}
+        onChange={handleTextChange}
         value={text}
       />
         <label htmlFor="Option">Types:</label>
         <select
           id="Option"
           className="minutes_textfield"
-          value={option}
-          onChange={handleOptionChange}
+          value={types}
+          onChange={handleTypesChange}
         >
           <option value=""></option>
           <option value="Entertainment">Entertainment</option>

@@ -2,11 +2,12 @@
     background-color: #353538;
     padding-top: 50px;
     height: 850px;
+    max-height: 100vh;
+    overflow-y: auto;
     font-size: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-  
-
+     
 }
+

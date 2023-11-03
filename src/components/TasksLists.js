@@ -1,11 +1,11 @@
 import { ListItem } from "./ListItem";
 import "../styles/TasksList.css";
 
-export const TasksLists = ({tasks, types, minutes, removeTask}) => {
+export const TasksLists = ({tasks, removeTask}) => {
     return <div className="todo-list">
-         {tasks.map((task,  index) => {
+         {tasks.map((task) => {
         return (
-          <ListItem text={task} minutes={minutes} types={types} removeTask={() => removeTask(index)} key={index} />
+          <ListItem text={task.text} minutes={task.minutes} types={task.types} removeTask={() => removeTask(task.id)} />
         );
       })}
     </div>
