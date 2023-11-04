@@ -212,13 +212,16 @@ export default function Tasks() {
   return (
     <div className="tasks">
       <Form  addTask={handleTaskSubmit} />  
+      <div className="searchBarTypes">
       <input
+        className="textfield"
         type="text"
         placeholder="Filter tasks..."
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
       /> 
       <select
+          className="minutes_textfield"
           value={filterType}
           onChange={(e) => setFilterType(e.target.value)}
         >
@@ -227,7 +230,8 @@ export default function Tasks() {
               {type || "All"}
             </option>
           ))}
-        </select>      
+        </select> 
+        </div>     
       <TasksLists  tasks = {tasks}  removeTask = {removeTask} filterText={filterText} filterType={filterType}/>
     </div>
   );

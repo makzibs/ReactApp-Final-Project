@@ -2,9 +2,27 @@
   "tasks": [
     {
       "text": "clean",
+      "type": "Entertainment",
+      "minutes": "00:00:23",
+      "id": 13
+    },
+    {
+      "text": "fry",
+      "type": "Household",
+      "minutes": "00:00:08",
+      "id": 16
+    },
+    {
+      "text": "clean",
       "type": "Studies",
-      "minutes": "45",
-      "id": 4
+      "minutes": "00:00:06",
+      "id": 18
+    },
+    {
+      "text": "fry",
+      "type": "Entertainment",
+      "minutes": "00:00:01",
+      "id": 19
     }
   ]
 }
