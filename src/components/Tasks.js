@@ -155,9 +155,10 @@ import { TasksLists } from "./TasksLists";
 
 export default function Tasks() {
   const [tasks, setTasks] = useState([]);
-  
+  const [filterText, setFilterText] = useState(""); // State variable for filtering
+  const [filterType, setFilterType] = useState(""); 
 
-  
+  const filterTypes = ["", "Entertainment", "Studies", "Household"];
 
   const handleTaskSubmit = async (newTask) => {
     
@@ -210,8 +211,24 @@ export default function Tasks() {
 
   return (
     <div className="tasks">
-      <Form  addTask={handleTaskSubmit} />         
-      <TasksLists  tasks = {tasks}  removeTask = {removeTask}/>
+      <Form  addTask={handleTaskSubmit} />  
+      <input
+        type="text"
+        placeholder="Filter tasks..."
+        value={filterText}
+        onChange={(e) => setFilterText(e.target.value)}
+      /> 
+      <select
+          value={filterType}
+          onChange={(e) => setFilterType(e.target.value)}
+        >
+          {filterTypes.map((type) => (
+            <option key={type} value={type}>
+              {type || "All"}
+            </option>
+          ))}
+        </select>      
+      <TasksLists  tasks = {tasks}  removeTask = {removeTask} filterText={filterText} filterType={filterType}/>
     </div>
   );
 }

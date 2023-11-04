@@ -142,6 +142,7 @@ export const Form = ({ addTask }) => {
   };
 
   return (
+   
     <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="task">Task:</label>
       <input
@@ -178,5 +179,6 @@ export const Form = ({ addTask }) => {
 
       <input type="submit" value="Add Task" className="submit-btn" />
     </form>
+  
   );
 }; 
