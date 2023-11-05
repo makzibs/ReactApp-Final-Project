@@ -7,3 +7,22 @@
     width: 40%;
     margin: 1rem auto;
   }
+
+
+
+@media (max-width: 500px) {
+
+
+  .todo-list {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* To center across the page */
+    width: 40%;
+    margin: 100px
+  }
+
+
+
+}

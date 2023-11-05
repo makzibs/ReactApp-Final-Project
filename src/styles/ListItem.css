@@ -39,4 +39,50 @@
   .checkbox:hover {
     cursor: pointer;
   }
+
+
+  @media (max-width: 500px) {
+    .list-item {
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px 0px;
+     
+      height: 40px;
+      width: 400px;
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0px 5px 10px rgb(199, 199, 199);
+      font-size: 14px;
+    }
+
+    .list-item:hover {
+      box-shadow: 0px 3px 7px rgb(205, 205, 205);
+    }
+  
+    .taskTitle{
+       font-weight: bold;
+    }
+    .taskTypes{
+      font-style: italic;
+      font-weight: 400;
+    }
+    .taskMinutes{
+      font-weight: bold;
+    }
+    
+    .checkbox {
+      background-color: white;
+      border: 3.5px solid rgb(255, 19, 98);
+      box-shadow: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+    }
+    
+    .checkbox:hover {
+      cursor: pointer;
+    }
+  }
   

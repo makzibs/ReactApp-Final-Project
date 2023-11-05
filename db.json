@@ -2,33 +2,39 @@
   "tasks": [
     {
       "text": "clean",
-      "type": "Entertainment",
-      "minutes": "00:00:23",
-      "id": 13
-    },
-    {
-      "text": "clean",
-      "type": "Studies",
-      "minutes": "00:00:06",
-      "id": 18
-    },
-    {
-      "text": "clean",
       "type": "Household",
       "minutes": "00:00:06",
       "id": 20
     },
     {
-      "text": "fry",
+      "text": "fry fish",
       "type": "Household",
-      "minutes": "00:00:01",
+      "minutes": "00:00:54",
       "id": 21
     },
     {
-      "text": "cook",
-      "type": "Household",
-      "minutes": "00:00:01",
+      "text": "Study math",
+      "type": "Entertainment",
+      "minutes": "00:00:05",
       "id": 22
+    },
+    {
+      "text": "play song",
+      "type": "Hobby",
+      "minutes": "00:00:01",
+      "id": 23
+    },
+    {
+      "text": "wash dishes",
+      "type": "Household",
+      "minutes": "00:00:09",
+      "id": 24
+    },
+    {
+      "text": "study physcis",
+      "type": "Studies",
+      "minutes": "00:00:05",
+      "id": 25
     }
   ]
 }

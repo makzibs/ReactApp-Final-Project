@@ -156,7 +156,7 @@ export const Form = ({ addTask }) => {
       <label htmlFor="Option">Types:</label>
       <select
         id="Option"
-        className="minutes_textfield"
+        className="option_textfield"
         value={types}
         onChange={handleTypesChange}
       >
@@ -164,6 +164,8 @@ export const Form = ({ addTask }) => {
         <option value="Entertainment">Entertainment</option>
         <option value="Studies">Studies</option>
         <option value="Household">Household</option>
+        <option value="Hobby">Hobby</option>
+        <option value="Sport">Sport</option>
       </select>
 
       {isTracking ? (

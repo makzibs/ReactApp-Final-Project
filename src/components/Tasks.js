@@ -159,7 +159,7 @@ export default function Tasks() {
   const [filterType, setFilterType] = useState(""); 
   const theme = localStorage.getItem("theme");
 
-  const filterTypes = ["", "Entertainment", "Studies", "Household"];
+  const filterTypes = ["", "Entertainment", "Studies", "Household", "Hobby", "Sport"];
 
   const handleTaskSubmit = async (newTask) => {
     
@@ -215,14 +215,14 @@ export default function Tasks() {
       <Form  addTask={handleTaskSubmit} />  
       <div className="searchBarTypes">
       <input
-        className="textfield"
+        className="textfield_filter"
         type="text"
         placeholder="Filter tasks..."
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
       /> 
       <select
-          className="minutes_textfield"
+          className="types_textfield"
           value={filterType}
           onChange={(e) => setFilterType(e.target.value)}
         >
