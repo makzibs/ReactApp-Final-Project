@@ -40,7 +40,7 @@
     cursor: pointer;
   }
 
-
+/*Media queries to make the contents responsive in the screen which has the resolution less or equal to 768px*/
   @media (max-width: 768px) {
     .list-item {
 
@@ -86,8 +86,8 @@
     }
   }
   
-
-  @media screen and (min-width: 768px) and (max-width: 1240px) {
+/*Media queries to make the contents responsive in the screen which has the resolution from 769px to 1240px*/
+  @media screen and (min-width: 769px) and (max-width: 1240px) {
     .list-item {
 
       display: flex;
@@ -104,23 +104,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1240px) {
-    .list-item {
-
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 10px 0px;
-     
-      height: 40px;
-      width: 560px;
-      background-color: white;
-      border-radius: 0.5rem;
-      box-shadow: 0px 5px 10px rgb(199, 199, 199);
-      font-size: 14px;
-    }
-  }
-
+ 
+/*Media queries to make the contents responsive in the screen which has the resolution equal to more than 1241px*/
   @media screen and (min-width: 1241px) {
     .list-item {
       display: flex;
@@ -153,10 +138,10 @@
     
     .checkbox {
       background-color: white;
-      border: 3.5px solid rgb(255, 19, 98);
+      border: 4px solid rgb(255, 19, 98);
       box-shadow: none;
-      height: 20px;
-      width: 20px;
+      height: 24px;
+      width: 24px;
       border-radius: 100%;
     }
     

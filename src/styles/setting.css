@@ -44,7 +44,7 @@
     cursor: pointer
   }
 
-
+/*Media queries to make the contents responsive in the screen which has the resolution less or equal to 768px*/
   @media (max-width: 500px) {
 
     .setting{

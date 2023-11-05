@@ -1,22 +1,10 @@
 {
   "tasks": [
     {
-      "text": "clean",
-      "type": "Household",
-      "minutes": "00:00:06",
-      "id": 20
-    },
-    {
       "text": "fry fish",
       "type": "Household",
       "minutes": "00:00:54",
       "id": 21
-    },
-    {
-      "text": "Study math",
-      "type": "Entertainment",
-      "minutes": "00:00:05",
-      "id": 22
     },
     {
       "text": "play song",
@@ -31,10 +19,58 @@
       "id": 24
     },
     {
-      "text": "study physcis",
-      "type": "Studies",
-      "minutes": "00:00:05",
+      "text": "cook dinner",
+      "type": "Household",
+      "minutes": "00:00:06",
       "id": 25
+    },
+    {
+      "text": "Take a shower",
+      "type": "Household",
+      "minutes": "00:00:04",
+      "id": 26
+    },
+    {
+      "text": "Play soccer",
+      "type": "Sport",
+      "minutes": "00:00:01",
+      "id": 27
+    },
+    {
+      "text": "Play guitar",
+      "type": "Hobby",
+      "minutes": "00:00:02",
+      "id": 28
+    },
+    {
+      "text": "Programming assignment",
+      "type": "Studies",
+      "minutes": "00:00:01",
+      "id": 29
+    },
+    {
+      "text": "Watch movie",
+      "type": "Entertainment",
+      "minutes": "00:00:02",
+      "id": 30
+    },
+    {
+      "text": "repair vaccum",
+      "type": "Household",
+      "minutes": "00:00:04",
+      "id": 31
+    },
+    {
+      "text": "Empty bins",
+      "type": "Household",
+      "minutes": "00:00:04",
+      "id": 32
+    },
+    {
+      "text": "React app",
+      "type": "Studies",
+      "minutes": "00:00:07",
+      "id": 33
     }
   ]
 }

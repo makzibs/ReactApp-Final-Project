@@ -1,5 +1,5 @@
 
-
+/*Media queries to make the contents responsive tin the screen which has the resolution less or equal to 768px*/
 @media (max-width: 768px) {
 
     .App{
@@ -42,8 +42,8 @@
     }
 
 }
-
-@media screen and (min-width: 768px) {
+/*Media queries to make the contents responsive in the screen which has the resolution equal to 769px or more*/
+@media screen and (min-width: 769px) {
     .App{
         margin: 0;
         padding: 0;

@@ -82,7 +82,7 @@
 
 
 
-
+/*Media queries to make the contents responsive in the screen which has the resolution less or equal to 768px*/
   @media (max-width: 768px) {
 
     .form {
@@ -174,8 +174,8 @@
 
 
 
-
-  @media screen and (min-width: 768px) and (max-width: 1420px) {
+/*Media queries to make the contents responsive in the screen which has the resolution from 769px to 1420px*/
+  @media screen and (min-width: 769px) and (max-width: 1420px) {
 
 
     .form {
@@ -263,16 +263,5 @@
     
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1240px) {
-    .stopWatchButton{
-      height: 100%;
-      background-color: rgb(19, 93, 255);
-      color: white;
-      border: none;
-      border-radius: 0.5rem;
-      font-size: 0.8rem;
-      box-shadow: 0px 5px 10px #a8b1ff;
-      padding: 0 0.95rem;
-      margin-left: 25px;
-    }
-  }
+ 
+  

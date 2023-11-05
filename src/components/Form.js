@@ -1,93 +1,17 @@
-/*import { useState } from "react";
-
-import "../styles/form.css";
-
-export const Form = ({ addTask }) => {
-
-  const [text, setText] = useState("");
-  const [types, setTypes] = useState("");
-  const [minutes, setMinutes] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  
-   // Create a task object
-    const newTask = {
-    text: text,
-    type: types,
-    minutes: minutes,
-  };
-
-   addTask(newTask);
-
-    setText("");
-    setTypes("Entertainment");
-    setMinutes("");
-  };
-
-  const handleTextChange = (e) => {
-    setText(e.target.value);
-  };
-
-  const handleTypesChange = (e) => {
-    setTypes(e.target.value);
-  };
-
-  const handleMinutesChange = (e) => {
-    setMinutes(e.target.value);
-  };
-
-  return (
-    <form className="form" onSubmit={handleSubmit}>
-    <label htmlFor="task">Task:</label>
-      <input
-        type="text"
-        id="task"
-        className="textfield"
-        onChange={handleTextChange}
-        value={text}
-      />
-        <label htmlFor="Option">Types:</label>
-        <select
-          id="Option"
-          className="minutes_textfield"
-          value={types}
-          onChange={handleTypesChange}
-        >
-          <option value=""></option>
-          <option value="Entertainment">Entertainment</option>
-          <option value="Studies">Studies</option>
-          <option value="Household">Househld</option>
-        </select>
-            
-
-        <label htmlFor="minutes">Minutes Spent:</label>
-        <input
-          type="text"
-          className="minutes_textfield"
-          id="minutes"
-          value={minutes}
-          onChange={handleMinutesChange}
-        />
-      <input type="submit" value="Add" className="submit-btn" />
-    </form>
-  );
-}; */
-
 
 import { useState, useRef } from "react";
-
 import "../styles/form.css";
-
+// State variables for task input, task type, tracking status, and elapsed time
 export const Form = ({ addTask }) => {
   const [text, setText] = useState("");
   const [types, setTypes] = useState("");
   const [isTracking, setIsTracking] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
   const theme = localStorage.getItem("theme");
-
+   // Reference to the timer interval
   const timerRef = useRef(null);
 
+  // Function to start or stop tracking time
   const handleStartStop = () => {
     if (isTracking) {
       // Stop the timer
@@ -102,6 +26,7 @@ export const Form = ({ addTask }) => {
     setIsTracking(!isTracking);
   };
 
+  // Function to format elapsed time into hh:mm:ss format
   function formatElapsedTime(elapsedTimeInSeconds) {
     const hours = Math.floor(elapsedTimeInSeconds / 3600);
     const minutes = Math.floor((elapsedTimeInSeconds % 3600) / 60);
@@ -112,7 +37,7 @@ export const Form = ({ addTask }) => {
     return formattedTime;
   }
   
-
+// Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -122,9 +47,10 @@ export const Form = ({ addTask }) => {
       type: types,
       minutes: formatElapsedTime(Math.floor(elapsedTime / 1000)),
     };
-
+   // Call the "addTask" function passed from the parent component
     addTask(newTask);
 
+   // Call the "addTask" function passed from the parent component
     setText("");
     setTypes("");
     setElapsedTime(0);
@@ -134,10 +60,11 @@ export const Form = ({ addTask }) => {
     clearInterval(timerRef.current);
   };
 
+ // Function to handle changes in the task input
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
-
+// Function to handle changes in the task type
   const handleTypesChange = (e) => {
     setTypes(e.target.value);
   };

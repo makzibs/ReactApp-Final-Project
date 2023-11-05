@@ -41,7 +41,7 @@
   box-sizing: border-box;
   width: 100px;
 }
-
+/*Media queries to make the contents responsive in the screen which has the resolution less or equal to 768px*/
 @media (max-width: 768px) {
 
   .tasks{
