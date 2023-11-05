@@ -84,6 +84,7 @@ export const Form = ({ addTask }) => {
   const [types, setTypes] = useState("");
   const [isTracking, setIsTracking] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
+  const theme = localStorage.getItem("theme");
 
   const timerRef = useRef(null);
 
@@ -143,7 +144,7 @@ export const Form = ({ addTask }) => {
 
   return (
    
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="form" id={theme} onSubmit={handleSubmit}>
       <label htmlFor="task">Task:</label>
       <input
         type="text"

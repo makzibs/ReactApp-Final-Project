@@ -10,16 +10,15 @@
 }
 
 #light {
-    background-color: #f3ebf6;
+    background-color: white;
+    color: rgb(19, 93, 255);
   }
   
 #dark {
     background-color: #353538;
   }
 
- #light{
-    color: rgb(19, 93, 255);
- } 
+ 
 
 .switch {
     display: flex;
