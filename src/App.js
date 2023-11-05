@@ -31,7 +31,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<Tasks />} />
         <Route path="/about" element={<About />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/setting" element={<Setting />} />

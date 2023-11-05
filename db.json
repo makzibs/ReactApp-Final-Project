@@ -7,22 +7,28 @@
       "id": 13
     },
     {
-      "text": "fry",
-      "type": "Household",
-      "minutes": "00:00:08",
-      "id": 16
-    },
-    {
       "text": "clean",
       "type": "Studies",
       "minutes": "00:00:06",
       "id": 18
     },
     {
+      "text": "clean",
+      "type": "Household",
+      "minutes": "00:00:06",
+      "id": 20
+    },
+    {
       "text": "fry",
-      "type": "Entertainment",
+      "type": "Household",
       "minutes": "00:00:01",
-      "id": 19
+      "id": 21
+    },
+    {
+      "text": "cook",
+      "type": "Household",
+      "minutes": "00:00:01",
+      "id": 22
     }
   ]
 }
