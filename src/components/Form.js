@@ -50,7 +50,7 @@ export const Form = ({ addTask }) => {
    // Call the "addTask" function passed from the parent component
     addTask(newTask);
 
-   // Call the "addTask" function passed from the parent component
+   
     setText("");
     setTypes("");
     setElapsedTime(0);
