@@ -42,7 +42,7 @@
   width: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
   .tasks{
     background-color: #353538;
@@ -89,3 +89,5 @@ margin: 0 0 0 0;
    
 
 }
+
+
