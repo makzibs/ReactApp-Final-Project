@@ -179,6 +179,7 @@ export const Form = ({ addTask }) => {
 
       <input type="submit" value="Add Task" className="submit-btn" />
     </form>
+    
   
   );
 }; 

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function About() {
   const navigate = useNavigate();
+  const theme = localStorage.getItem("theme");
 
   const handleGoToTasks = () => {
     navigate("/tasks"); // Navigate to the /tasks route
@@ -24,7 +25,7 @@ function About() {
 
 
   return (
-    <div className="about">
+    <div className="about" id={theme}>
       <h1>Welcome to the homepage</h1>
       <button className="addTaskButton" onClick={handleGoToTasks}>Add Task</button>
       <h1>{time}</h1>

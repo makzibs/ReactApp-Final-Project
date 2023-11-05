@@ -9,6 +9,25 @@
 
 }
 
+#light {
+    background-color: #f3ebf6;
+  }
+  
+#dark {
+    background-color: #353538;
+  }
+
+ #light{
+    color: rgb(19, 93, 255);
+ } 
+
+.switch {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
 .theme-btn{
     height: 40px;
     background-color: rgb(19, 93, 255);

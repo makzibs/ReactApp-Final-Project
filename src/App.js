@@ -2,8 +2,11 @@ import About from "./components/About";
 import Tasks from "./components/Tasks";
 import Setting from "./components/Setting";
 import { Routes, Route } from "react-router-dom";
+
 import { NavLink } from "react-router-dom";
 import "./styles/App.css";
+
+
 
 function App() {
   return (

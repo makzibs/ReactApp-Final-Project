@@ -157,6 +157,7 @@ export default function Tasks() {
   const [tasks, setTasks] = useState([]);
   const [filterText, setFilterText] = useState(""); // State variable for filtering
   const [filterType, setFilterType] = useState(""); 
+  const theme = localStorage.getItem("theme");
 
   const filterTypes = ["", "Entertainment", "Studies", "Household"];
 
@@ -210,7 +211,7 @@ export default function Tasks() {
 
 
   return (
-    <div className="tasks">
+    <div className="tasks" id={theme}>
       <Form  addTask={handleTaskSubmit} />  
       <div className="searchBarTypes">
       <input
